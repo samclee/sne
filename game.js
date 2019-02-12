@@ -21,9 +21,8 @@ function advance() {
 function preload() {
 
 	bg = loadImage('assets/bg.png')
-	for (let fn of files) {
+	for (let fn of files)
 		chars[fn] = loadImage('assets/' + fn + '.png')
-	}
 	
 }
 
@@ -41,7 +40,7 @@ function draw() {
 	image(cur_img,320 - cur_img.width / 2,480 - cur_img.height)
 	
 	// box
-	fill(0)
+	fill(0,0,0,140)
 	let blk_hgt = 140
 	rect(0,480-blk_hgt,640,blk_hgt)
 
@@ -59,9 +58,7 @@ function keyPressed() {
 	}
 	else if (keyCode == 32) {
 		advance()
-		//console.log('hi')
 	}
-	console.log(cur_choice)
 }
 
 function mod(x, n) { return ((x % n) + n) % n ; }
