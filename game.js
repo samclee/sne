@@ -1,12 +1,12 @@
 let bg
 
 // characters
-let files = ['person', 'other'] // HACK THIS LINE
+let files = ['fish'] // HACK THIS LINE
 let chars = {}
-let cur_char = 'person'
+let cur_char = 'fish'
 
 // text
-let cur_line = script['start']
+let cur_line = script['a']
 let cur_choice = 0
 
 function advance() {
